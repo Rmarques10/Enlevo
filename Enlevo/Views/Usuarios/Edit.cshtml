@@ -1,0 +1,44 @@
+﻿@model Enlevo.Models.Usuario
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Usuario</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="UsuarioId" />
+            <div class="form-group">
+                <label asp-for="NomeUsuario" class="control-label"></label>
+                <input asp-for="NomeUsuario" class="form-control" />
+                <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmailUsuario" class="control-label"></label>
+                <input asp-for="EmailUsuario" class="form-control" />
+                <span asp-validation-for="EmailUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SenhaUsuario" class="control-label"></label>
+                <input asp-for="SenhaUsuario" class="form-control" />
+                <span asp-validation-for="SenhaUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

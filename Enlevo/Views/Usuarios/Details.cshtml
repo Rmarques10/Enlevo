@@ -1,0 +1,38 @@
+﻿@model Enlevo.Models.Usuario
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container-header">
+    <div class="header-text">
+        <h2>Detalhes usuário</h2>
+    </div>
+    <img src="~/images/circle.png" width="10" height="10" />
+</div>
+<div>
+    <dl class="dl-horizontal container-details">
+        <dt class="item-detail">
+            @Html.DisplayNameFor(model => model.NomeUsuario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NomeUsuario)
+        </dd>
+        <dt class="item-detail">
+            @Html.DisplayNameFor(model => model.EmailUsuario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmailUsuario)
+        </dd>
+        <dt class="item-detail">
+            @Html.DisplayNameFor(model => model.SenhaUsuario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SenhaUsuario)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.UsuarioId" class="btn btn-edit">Editar</a>
+    <a asp-action="Index" class="btn btn-list">Voltar</a>
+</div>

@@ -1,0 +1,42 @@
+﻿@model Enlevo.Models.Produto
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container-header">
+    <div class="header-text">
+        <h2>Cadastrar produto</h2>
+    </div>
+    <img src="~/images/circle.png" width="10" height="10" />
+</div>
+<div class="">
+    <div class="container-form col-md-12">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group col-md-12">
+                <label asp-for="NomeProduto" class="control-label"></label>
+                <input asp-for="NomeProduto" class="form-control" />
+                <span asp-validation-for="NomeProduto" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="QuantidadeProduto" class="control-label"></label>
+                <input asp-for="QuantidadeProduto" class="form-control" />
+                <span asp-validation-for="QuantidadeProduto" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="ValorProduto" class="control-label"></label>
+                <input asp-for="ValorProduto" class="form-control" pattern="^\d+(,\d{1,2})?$" />
+                <span asp-validation-for="ValorProduto" class="text-danger"></span>
+            </div>
+            <div class="form-group btn-cadastrar col-md-12">
+                <input type="submit" value="Create" class="btn btn-default" />
+                <a asp-action="Index" class="btn btn-cancel">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

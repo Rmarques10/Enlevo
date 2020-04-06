@@ -1,0 +1,34 @@
+﻿@model Enlevo.Models.Cliente
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="container-header">
+    <div class="header-text">
+        <h2 style="display:inline-block;">Excluir</h2> <img src="~/images/circle.png" width="10" height="10" />
+        <p>Tem certeza que gostaria de excluir?</p>
+    </div>
+</div>
+<div>
+    <dl class="dl-horizontal container-details">
+        <dt class="item-detail">
+            @Html.DisplayNameFor(model => model.NomeCliente)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NomeCliente)
+        </dd>
+        <dt class="item-detail">
+            @Html.DisplayNameFor(model => model.TelefoneCliente)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TelefoneCliente)
+        </dd>       
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ClienteId" />
+        <input type="submit" value="Delete" class="btn btn-default btn-delete" />
+        <a asp-action="Index" class="btn btn-list">Cancelar</a>
+    </form>
+</div>

@@ -1,0 +1,42 @@
+﻿@model Enlevo.Models.Cliente
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container-header">
+    <div class="header-text">
+        <h2>Editar cliente</h2>
+    </div>
+    <img src="~/images/circle.png" width="10" height="10" />
+</div>
+
+<div class="">
+    <div class="container-form col-md-12">
+        <form asp-action="Edit">
+            <div class="form-row">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="ClienteId" />
+                <div class="form-group col-md-8">
+                    <label asp-for="NomeCliente" class="control-label"></label>
+                    <input asp-for="NomeCliente" class="form-control" />
+                    <span asp-validation-for="NomeCliente" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-4">
+                    <label asp-for="TelefoneCliente" class="control-label"></label>
+                    <input asp-for="TelefoneCliente" class="form-control" />
+                    <span asp-validation-for="TelefoneCliente" class="text-danger"></span>
+                </div>
+                
+                <div class="form-group col-md-12 btn-cadastrar">
+                    <input type="submit" value="Save" class="btn btn-default" />
+                    <a asp-action="Index" class="btn btn-cancel">Cancelar</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

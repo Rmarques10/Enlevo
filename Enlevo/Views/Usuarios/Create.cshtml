@@ -1,0 +1,48 @@
+﻿@model Enlevo.Models.Usuario
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container-header">
+    <div class="header-text">
+        <h2>Cadastrar usuário</h2>
+    </div>
+    <img src="~/images/circle.png" width="10" height="10" />
+</div>
+<div class="">
+    <div class="container-form col-md-12">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group col-md-6">
+                <label asp-for="NomeUsuario" class="control-label"></label>
+                <input asp-for="NomeUsuario" class="form-control" />
+                <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="EmailUsuario" class="control-label"></label>
+                <input asp-for="EmailUsuario" class="form-control" />
+                <span asp-validation-for="EmailUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="SenhaUsuario" class="control-label"></label>
+                <input asp-for="SenhaUsuario" class="form-control" />
+                <span asp-validation-for="SenhaUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+            </div>
+            <div class="form-group btn-cadastrar col-md-12">
+                <input type="submit" value="Create" class="btn btn-default" />
+                <a asp-action="Index" class="btn btn-cancel">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

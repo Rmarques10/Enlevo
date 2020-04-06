@@ -1,0 +1,29 @@
+﻿@model Enlevo.Models.Faturamento
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container-header">
+    <div class="header-text">
+        <h2>Detalhes Faturamento</h2>
+    </div>
+    <img src="~/images/circle.png" width="10" height="10" />
+</div>
+
+<div>
+    <h4>Faturamento</h4>
+    <hr />
+    <dl class="dl-horizontal container-details">
+        <dt class="item-detail">
+            @Html.DisplayNameFor(model => model.ValorTotal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ValorTotal)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.FaturamentoId" class="btn btn-edit">Edit</a>
+    <a asp-action="Index"  class="btn btn-list">Back to List</a>
+</div>

@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Enlevo</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/style_1.css" />
+        <link rel="stylesheet" href="~/css/style_2.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+
+    </environment>
+</head>
+<body>
+
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="~/images/enlevo_logo_white.png" width="120" />
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="list_item a1">
+                    <a class="linkPage" asp-controller="Home" asp-action="Index">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+                        <g>
+                        <path d="M506.555,208.064L263.859,30.367c-4.68-3.426-11.038-3.426-15.716,0L5.445,208.064
+			c-5.928,4.341-7.216,12.665-2.875,18.593s12.666,7.214,18.593,2.875L256,57.588l234.837,171.943c2.368,1.735,5.12,2.57,7.848,2.57
+			c4.096,0,8.138-1.885,10.744-5.445C513.771,220.729,512.483,212.405,506.555,208.064z" />
+
+
+
+	</g>
+</g>
+<g>
+                        <g>
+                        <path d="M442.246,232.543c-7.346,0-13.303,5.956-13.303,13.303v211.749H322.521V342.009c0-36.68-29.842-66.52-66.52-66.52
+			s-66.52,29.842-66.52,66.52v115.587H83.058V245.847c0-7.347-5.957-13.303-13.303-13.303s-13.303,5.956-13.303,13.303v225.053
+			c0,7.347,5.957,13.303,13.303,13.303h133.029c6.996,0,12.721-5.405,13.251-12.267c0.032-0.311,0.052-0.651,0.052-1.036v-128.89
+			c0-22.009,17.905-39.914,39.914-39.914s39.914,17.906,39.914,39.914v128.89c0,0.383,0.02,0.717,0.052,1.024
+			c0.524,6.867,6.251,12.279,13.251,12.279h133.029c7.347,0,13.303-5.956,13.303-13.303V245.847
+			C455.549,238.499,449.593,232.543,442.246,232.543z" />
+
+
+
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li class="list_item">
+                    <a href="#pageClientes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle a1">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+<g>
+                        <g>
+                        <path d="M304,151.997h-32v-12.23c10.086-9.063,16-22.148,16-35.77c0-14.371-6.367-27.867-17.469-37.031
+			c-11.098-9.164-25.676-12.832-40.016-10.055c-18.676,3.613-33.762,18.617-37.535,37.336c-3.441,17.082,2.285,34.164,15.02,45.527
+			v12.223h-32c-13.234,0-24,10.766-24,24v88c0,4.418,3.582,8,8,8h160c4.418,0,8-3.582,8-8v-88
+			C328,162.762,317.234,151.997,304,151.997z M312,255.997H168v-80c0-4.41,3.59-8,8-8h40c4.418,0,8-3.582,8-8v-24
+			c0-2.516-1.184-4.883-3.191-6.395c-9.98-7.504-14.633-19.84-12.141-32.191c2.504-12.434,12.504-22.395,24.883-24.789
+			c9.781-1.883,19.285,0.488,26.797,6.684C267.754,85.419,272,94.419,272,103.997c0,10-4.789,19.574-12.809,25.605
+			c-2.008,1.512-3.191,3.879-3.191,6.395v24c0,4.418,3.582,8,8,8h40c4.41,0,8,3.59,8,8V255.997z" />
+
+
+
+	</g>
+</g>
+<g>
+                        <g>
+                        <path d="M99.191,161.602c-2.008,1.512-3.191,3.879-3.191,6.395v24c0,4.418,3.582,8,8,8h32v-16h-24v-12.23
+			c10.086-9.063,16-22.148,16-35.77c0-14.371-6.367-27.867-17.469-37.031c-11.098-9.164-25.676-12.828-40.016-10.055
+			c-18.676,3.613-33.762,18.617-37.535,37.336c-3.441,17.082,2.285,34.164,15.02,45.527v12.223H24c-13.234,0-24,10.766-24,24v56
+			c0,4.418,3.582,8,8,8h128v-16H16v-48c0-4.41,3.59-8,8-8h32c4.418,0,8-3.582,8-8v-24c0-2.516-1.184-4.883-3.191-6.395
+			c-9.98-7.504-14.633-19.84-12.141-32.191c2.504-12.434,12.504-22.395,24.883-24.789c9.789-1.887,19.289,0.488,26.797,6.684
+			c7.406,6.113,11.652,15.113,11.652,24.691C112,145.997,107.211,155.571,99.191,161.602z" />
+
+
+
+	</g>
+</g>
+<g>
+                        <g>
+                        <path d="M456,183.997h-24v-12.223c12.734-11.363,18.461-28.445,15.02-45.527c-3.773-18.719-18.859-33.723-37.539-37.336
+			c-14.309-2.766-28.918,0.895-40.012,10.055C358.367,108.129,352,121.626,352,135.997c0,13.621,5.914,26.707,16,35.77v12.23h-24v16
+			h32c4.418,0,8-3.582,8-8v-24c0-2.516-1.184-4.883-3.191-6.395c-8.02-6.031-12.809-15.605-12.809-25.605
+			c0-9.578,4.246-18.578,11.652-24.691c7.508-6.195,17-8.574,26.793-6.684c12.383,2.395,22.383,12.355,24.887,24.789
+			c2.492,12.352-2.16,24.688-12.141,32.191c-2.008,1.512-3.191,3.879-3.191,6.395v24c0,4.418,3.582,8,8,8h32c4.41,0,8,3.59,8,8v48
+			H344v16h128c4.418,0,8-3.582,8-8v-56C480,194.762,469.234,183.997,456,183.997z" />
+
+
+
+	</g>
+</g>
+<g>
+                        <g>
+                        <path d="M432,303.997v-16H240c-4.418,0-8,3.582-8,8c0,22.055,17.945,40,40,40h24v8.938l-55.617,6.953l-68.375-15.195
+			l-14.352-14.352c-16.352-16.352-42.961-16.352-59.313,0c-3.125,3.125-3.125,8.188,0,11.313l56,56
+			c0.766,0.766,1.68,1.371,2.684,1.773l80,32c0.949,0.379,1.957,0.57,2.973,0.57c0.438,0,0.879-0.035,1.316-0.109l95.344-15.891H432
+			v-16h-64v-88H432z M352,391.997h-16c-0.441,0-0.879,0.035-1.316,0.109l-93.789,15.633l-76.398-30.559l-48.289-48.293
+			c9.746-4.969,21.992-3.375,30.137,4.766l16,16c1.074,1.078,2.434,1.824,3.922,2.152l72,16c0.898,0.199,1.824,0.25,2.727,0.129
+			l64-8c4.004-0.5,7.008-3.902,7.008-7.938v-24c0-4.418-3.582-8-8-8h-32c-10.43,0-19.328-6.688-22.629-16H352V391.997z" />
+
+
+
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                        <p>Clientes</p>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageClientes">
+                        <li>
+                            <a class="linkPage" asp-area="" asp-controller="Clientes" asp-action="Create">Cadastrar</a>
+                        </li>
+                        <li>
+                            <a class="linkPage" asp-area="" asp-controller="Clientes" asp-action="Index">Ver Todos</a>
+                        </li>
+                    </ul>
+                </li>                                                
+                <li class="list_item">
+                    <a href="#pageProd" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle a1">
+                        <svg height="512pt" viewBox="0 -31 512.00026 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0" /><path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0" /><path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0" /></svg>
+                        <p>Produtos</p>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageProd">
+                        <li>
+                            <a class="linkPage" asp-area="" asp-controller="Produtos" asp-action="Create">Cadastrar</a>
+                        </li>
+                        <li>
+                            <a class="linkPage" asp-area="" asp-controller="Produtos" asp-action="Index">Ver todos</a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="list_item">
+                    <a asp-area="" asp-controller="Usuarios" asp-action="Index">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 563.43 563.43" style="enable-background:new 0 0 563.43 563.43;" xml:space="preserve">
+<path d="M280.79,314.559c83.266,0,150.803-67.538,150.803-150.803S364.055,13.415,280.79,13.415S129.987,80.953,129.987,163.756
+	S197.524,314.559,280.79,314.559z M280.79,52.735c61.061,0,111.021,49.959,111.021,111.021S341.851,274.776,280.79,274.776
+	s-111.021-49.959-111.021-111.021S219.728,52.735,280.79,52.735z" />
+
+
+
+<path d="M19.891,550.015h523.648c11.102,0,19.891-8.789,19.891-19.891c0-104.082-84.653-189.198-189.198-189.198H189.198
+	C85.116,340.926,0,425.579,0,530.124C0,541.226,8.789,550.015,19.891,550.015z M189.198,380.708h185.034
+	c75.864,0,138.313,56.436,148.028,129.524H41.17C50.884,437.607,113.334,380.708,189.198,380.708z" />
+
+
+
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+                        <p>Usuário</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container body-content content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; 2019 - Enlevo</p>
+            </footer>
+        </div>
+    </div>
+    <partial name="_CookieConsentPartial" />
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,202 @@
+﻿body {
+}
+
+.banner-container.cliente{
+    background-image: url(../images/clientes.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 182px;
+
+}
+
+.banner-container.funcionario {
+    background-image: url(../images/funcionario.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 182px;
+
+}
+
+.banner-container.produto {
+    background-image: url(../images/produtos.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 182px;
+
+}
+
+.banner-container.servico {
+    background-image: url(../images/servicos.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 182px;
+
+}
+.banner-container.agenda {
+    background-image: url(../images/agenda.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 182px;
+}
+.banner-container.usuario {
+    background-image: url(../images/usuarios.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 182px;
+}
+
+.banner-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 46px;
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+    margin: 0;
+}
+
+.banner-txt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+    margin: 0;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #8153ff;
+    margin: 25px 0;
+    padding: 8px;
+    float: right;
+    width: 200px;
+}
+
+.link .container_icon svg {
+    width: 30px;
+    fill:  #FFF;
+}
+
+.link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.thea {
+    background-color: #f0f0f0;
+}
+
+.tb-superior {
+    padding: 15px !important;
+}
+
+.table-edit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-glass svg {
+    width: 16px;
+    fill: #e27168;
+}
+
+.icon-edit svg {
+    width: 16px;
+    fill: #e27168;
+}
+
+.icon-trash svg {
+    width: 16px;
+    fill: #8154ff;
+}
+
+.container-form {
+    background-color: #E9E9F0;
+    padding: 50px 20px 20px;
+}
+
+.btn-cadastrar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+    .btn-cadastrar input {
+        padding: 12px 50px;
+        margin-top: 30px;
+        font-weight: 600;
+        background-color: #e27168;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;
+    }
+
+.container-header {
+    display: flex;
+    align-items: flex-end;
+    background-color: #E9E9F0;
+    margin-bottom: 25px;
+    height: 100px;
+    padding: 10px 20px;
+}
+
+.header-text h2 {
+    margin: 0;
+}
+
+.container-details {
+    background-color: #E9E9F0;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.item-detail {
+    text-align: left !important;
+    padding-bottom: 10px;
+}
+
+.btn-edit {
+    background-color: #e27168;
+    width: 100px;
+    color: #fff;
+    border-radius: 24px;
+    font-weight: 600;
+}
+
+.btn-list {
+    background-color: #fff;
+    border: 1.5px solid #8154ff;
+    width: 100px;
+    color: #8154ff;
+    border-radius: 24px;
+    font-weight: 600;
+}
+
+.btn-delete {
+    background-color: #e27168;
+    width: 100px;
+    color: #fff;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.btn-cancel {
+    color: #8154ff;
+    font-weight: 600;
+}

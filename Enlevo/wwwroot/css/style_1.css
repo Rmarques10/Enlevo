@@ -1,0 +1,134 @@
+﻿/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #515050;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+    #sidebar.active {
+        margin-left: -250px;
+    }
+
+    #sidebar .sidebar-header {
+        padding: 20px;
+        background: #3E3E3E;
+    }
+
+    #sidebar ul.components {
+        padding-bottom: 20px;
+        height: 100vh;
+        border: none;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+    }
+
+    #sidebar ul p {
+        color: #fff;
+        padding: 10px;
+    }
+
+    #sidebar ul li {
+  
+    }
+
+    #sidebar ul li a svg {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        fill: #bdb0e0;
+    }
+
+    #sidebar ul li a {
+        width: 100%;
+        display: flex !important;
+        align-items: center;
+        padding: 8px 22px;
+        font-size: 1.1em;
+        display: block;
+        color: #fff;
+    }
+
+    #sidebar ul li p {
+       margin-bottom: 0px;
+    }
+
+     #sidebar ul li ul li a{
+         padding: 16px 22px;
+     }
+
+    #sidebar ul li:hover {
+        color: #fff;
+        background: #494848;
+    }
+
+    #sidebar ul li.active,
+    a[aria-expanded="true"] {
+        color: #fff;
+        background: #494848;
+        
+    }
+
+.list_item.active .a1{
+    border-left: 5px solid #ec8b84;
+}
+
+.list_item.active.a1 {
+    border-left: 5px solid #ec8b84;
+}
+
+list-unstyled collapse in {
+    display: block;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 40px !important;
+    background: #585858;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+    ul.CTAs a {
+        text-align: center;
+        font-size: 0.9em !important;
+        display: block;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
